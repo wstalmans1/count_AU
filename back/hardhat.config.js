@@ -7,7 +7,7 @@ module.exports = {
   solidity: "0.8.24",
   networks: {
     sepolia: {
-      url: process.env.ETHSCAN_API,
+      url: process.env.INFURA_URL,
       accounts: [`0x${process.env.PRIVATE_KEY}`] // Use environment variable to keep your private key secure
     }
   },
