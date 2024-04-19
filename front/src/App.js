@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { connectMetamask, listenForAccountChanges } from './connectMetamask';
+
+
 
 function App() {
+  const [connectedAccount, setConnectedAccount] = useState(null);
+
+  async function handleConnectMetamask() {
+    try {
+      const account = await connectMetamask();
+      setConnectedAccount(account);
+      listenForAccountChanges(setConnectedAccount);
+    } catch (error) {
+      alert(error.message);
+    }
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={handleConnectMetamask}>Connect to Metamask</button>
+      <h2>{connectedAccount ? connectedAccount : 'Not connected'}</h2>
+    </>
   );
 }
 
