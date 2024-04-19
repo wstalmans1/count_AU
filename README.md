@@ -66,7 +66,7 @@ Add your initial project setup to version control and push it to GitHub. From th
 
     git add .
     git commit -m "Initial project setup with frontend and backend directories"
-    git push -u origin master
+    git push -u origin main
 
 10. Regularly Update Your GitHub Repository
 Make it a practice to regularly commit your changes and push them to GitHub to ensure that your work is safely backed up.
