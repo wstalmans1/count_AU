@@ -22,7 +22,7 @@ function App() {
   // Get the value of the variable "count"
   async function fetchCount() {
     const countValue = await getCount();
-    setCount(countValue);
+    setCount(countValue.toString());
   }
 
   // Increment the value of the variable "count"
