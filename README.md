@@ -1,3 +1,5 @@
+THIS IS MY MAIN LEARNING REF TO BUILD A SIMPLE DAPP 
+
 initialisations for a local development project with requirements:
 1) the project syncs towards a github repository
 2) using npm
