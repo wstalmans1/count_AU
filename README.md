@@ -1,4 +1,4 @@
-THIS IS MY MAIN LEARNING REF TO BUILD A SIMPLE DAPP
+THIS IS MY MAIN LEARNING REFERENCE TO BUILD A SIMPLE DAPP
 
 (see local dev environment which is synced to the repository here) 
 
