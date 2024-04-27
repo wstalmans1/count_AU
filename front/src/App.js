@@ -29,6 +29,10 @@ function App() {
 
   // Increment the value of the variable "count"
   async function handleIncrement() {
+    if(!connectedAccount) {
+      alert('Please connect to Metamask first');
+      return;
+    }
     setLoading(true); // Start loading before the transaction
     await incrementCount();
     fetchCount(); // Refresh the count after increment
@@ -36,6 +40,10 @@ function App() {
 
   // Decrement the value of the variable "count"
   async function handleDecrement() {
+    if(!connectedAccount) {
+      alert('Please connect to Metamask first');
+      return;
+    }
     setLoading(true); // Start loading before the transaction
     await decrementCount();
     fetchCount();
