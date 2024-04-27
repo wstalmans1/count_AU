@@ -77,6 +77,8 @@ Make it a practice to regularly commit your changes and push them to GitHub to e
 
 11. Further Development
 Continue developing your project:
+https://hardhat.org/hardhat-runner/docs/getting-started
+
 
 Develop your React components and integrate Web3 functionalities.
 Develop your Solidity smart contracts within the Hardhat framework.
