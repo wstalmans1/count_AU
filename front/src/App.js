@@ -10,6 +10,10 @@ function App() {
 
   // Metamask
   async function handleConnectMetamask() {
+    if (connectedAccount) {
+      alert("You're already connected with an account. If you would like to connect another account, then go to Metamask and disconnect first the current account.");
+      return;
+    }
     try {
       const account = await connectMetamask();
       setConnectedAccount(account);
