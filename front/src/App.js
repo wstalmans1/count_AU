@@ -11,7 +11,7 @@ function App() {
   // Metamask
   async function handleConnectMetamask() {
     if (connectedAccount) {
-      alert(`You're currently already connected with the account ${connectedAccount}. If you would like to connect another account, then go to Metamask and disconnect the current account first.`);
+      alert(`You're already connected with the account ${connectedAccount}. If you would like to connect another account, then go to Metamask and disconnect the current account first.`);
       return;
     }
     try {
